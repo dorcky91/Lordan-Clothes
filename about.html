@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lordan Clothes ::</title>
+    <link
+      rel="shortcut icon"
+      href="imagenes/logo/logoTiendaBlack.ico"
+      type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mi barra de navegación. -->
+    <nav class="navbar navbar-expand-md navbar-white bg-light sticky-top">
+      <div class="container">
+        <a href="index.html"
+          ><img
+            id="milogo"
+            src="imagenes/logo/logoTiendaBlack.png"
+            alt="LogoTienda"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span><i id="bar" class="fa-sharp fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link me-3" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle me-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu mt-2">
+                <li>
+                  <a class="dropdown-item" href="hombres.html">Hombres</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mujeres.html">Mujeres</a>
+                </li>
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <li>
+                  <a class="dropdown-item border-0" href="kids.html">Niños</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="collection.html">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="contacto.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- seccion about us -->
+    <div class="container pt-5">
+      <div class="row gy-5">
+        <div class="col-lg-6">
+          <div>
+            <img
+              loading="lazy"
+              height="500"
+              class="w-100 object-fit-cover rounded-2"
+              src="imagenes/about/local.jpg"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6">
+          <div id="encabezado-about" class="ps-4 mb-5">
+            <h5 class="text-uppercase">About us</h5>
+            <h2 class="text-uppercase mb-4">
+              Lorem ipsum dolor sit amet consectetur.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              quidem sed. Delectus adipisci tenetur aperiam eligendi pariatur
+              earum! Deleniti, nobis?
+            </p>
+          </div>
+
+          <section id="mission-vission" class="container pt-5">
+            <div class="mb-5">
+              <div>
+                <!-- Menu y busqueda -->
+                <div id="objetivo" class="mb-3">
+                  <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                    <li class="nav-item mb-2" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="mission-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#mission-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="mission-pane"
+                        aria-selected="true">
+                        <h3 class="text-uppercase mb-0">our mission</h3>
+                      </button>
+                    </li>
+                    <li class="nav-item mb-2" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="vission-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#vission-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="vission-pane"
+                        aria-selected="false">
+                        <h3 class="text-uppercase mb-0">our vission</h3>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--contenido-->
+              <div class="tab-content tab-mission-vission" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="mission-pane"
+                  role="tabpanel"
+                  aria-labelledby="mission-tab"
+                  tabindex="0">
+                  <div id="mission">
+                    <h4 class="text-uppercase">mission</h4>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dignissimos inventore ipsam, nesciunt numquam sed
+                      necessitatibus temporibus nisi facere, illum corporis, sit
+                      veritatis! Iusto perspiciatis provident numquam deserunt
+                      voluptas vitae similique?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Labore asperiores ea nam tempora? Quas explicabo iusto
+                      aliquid, officiis corporis nostrum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="vission-pane"
+                  role="tabpanel"
+                  aria-labelledby="vission-tab"
+                  tabindex="0">
+                  <div id="vission">
+                    <h4 class="text-uppercase">vission</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo, fugiat. Corporis iste itaque nam, impedit,
+                      repellendus doloribus voluptatum nisi voluptate quaerat
+                      pariatur provident ad eaque molestias, harum quo quod a?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo voluptas accusamus doloremque placeat sit
+                      reprehenderit perferendis est vitae quisquam, illo
+                      pariatur nam animi fuga voluptatum!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Sección Hero -->
+        <section id="hero-about" class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="mb-5 first-order">
+                  <div class="ps-4">
+                    <h5 class="text-uppercase">special offer</h5>
+                    <h1 class="text-uppercase fs-1">
+                      save 30% on <span>all items</span>
+                    </h1>
+                    <h1 class="text-uppercase fs-1">
+                      your first <span>order</span>
+                    </h1>
+                  </div>
+                </div>
+                <p class="mb-3 pe-5 text-uppercase text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  id maxime ipsum magni! Nobis maxime molestiae dolores, aperiam
+                  doloribus maiores.
+                </p>
+                <button class="me-3">Shop Now</button>
+                <button class="leer-mas">Read More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION TEAM -->
+        <div class="container pt-3">
+          <div class="row gy-5">
+            <div class="col-md-8 team-members ms-4">
+              <h5 class="text-uppercase">The Team Members</h5>
+              <h1 class="fs-2 text-uppercase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-team">
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img loading="lazy" src="imagenes/team/manager-1.jpg" alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Lordan Dorcky
+                </h5>
+                <h5 class="text-center pb-3">Manager</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  loading="lazy"
+                  src="imagenes/team/co-manager-1.jpg"
+                  alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">Exy Ralph</h5>
+                <h5 class="text-center pb-3">Co-Manager</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  loading="lazy"
+                  class="position-relative"
+                  src="imagenes/team/ceo.jpg"
+                  alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Emmanuel David
+                </h5>
+                <h5 class="text-center pb-3">CEO</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img loading="lazy" src="imagenes/team/manager-2.jpg" alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Anette Flores
+                </h5>
+                <h5 class="text-center pb-3">Manager</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img loading="lazy" src="imagenes/team/model.jpg" alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Camy Marcelin
+                </h5>
+                <h5 class="text-center pb-3">Model</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="orlando"
+                  loading="lazy"
+                  src="imagenes/team/investor.jpg"
+                  alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Orlando Appolon
+                </h5>
+                <h5 class="text-center pb-3">Sponsor</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img loading="lazy" src="imagenes/team/investor-2.jpg" alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Reyna López
+                </h5>
+                <h5 class="text-center pb-3">Investor</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img loading="lazy" src="imagenes/team/ivestor-3.jpg" alt="" />
+                <h5 class="text-uppercase text-center py-3 mb-0">
+                  Gabriela FL
+                </h5>
+                <h5 class="text-center pb-3">Investor</h5>
+                <div class="redes-sociale position-absolute">
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="footer-one col-md-6 col-lg-3">
+            <img
+              loading="lazy"
+              id="logo-footer"
+              src="imagenes/logo/logoTiendaWhite.png"
+              alt="LogoTienda" />
+            <p class="pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              tenetur unde fugit quos ut voluptas quia rerum eveniet repellat
+              recusandae.
+            </p>
+          </div>
+          <div class="footer-one col-md-6 col-lg-3 mb-3">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+              <li><a href="index.html">home</a></li>
+              <li><a href="hombres.html">men</a></li>
+              <li><a href="mujeres.html">women</a></li>
+              <li><a href="kids.html">kids</a></li>
+              <li><a href="collection.html">collection</a></li>
+              <li><a href="blog.html">blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-one col-md-6 col-lg-3 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+              <h6 class="text-uppercase">Address</h6>
+              <p>004 Street Lordan, Mexico</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Phone</h6>
+              <small>
+                <p class="mb-0">
+                  Teléfono:
+                  <a class="text-decoration-none" href="tel:+52 01 1234 2000">
+                    +52 01 1234 2000
+                  </a>
+                </p>
+              </small>
+            </div>
+            <div>
+              <h6>E-mail</h6>
+              <small>
+                <p class="mb-0">
+                  Correo:
+                  <a
+                    class="text-decoration-none"
+                    href="mailto:lordan@hotmail.com?subject=Purchase a new product">
+                    lordan@hotmail.com
+                  </a>
+                </p>
+              </small>
+            </div>
+          </div>
+
+          <div class="footer-one col-md-6 col-lg-3">
+            <h5 class="pb-2">Instagram</h5>
+            <div>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/maquillaje-1.jpg"
+                  alt=""
+              /></a>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/Camisa-600.jpg"
+                  alt="" />
+              </a>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/sueter-600.jpg"
+                  alt="" />
+              </a>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/pexels-freestocksorg-291762.jpg"
+                  alt="" />
+              </a>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/slider-1.jpg"
+                  alt="" />
+              </a>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  class="img-fluid w-25 rounded m-2"
+                  src="imagenes/shop/shoes-1.jpg"
+                  alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 copyright mt-5">
+            <div class="row">
+              <div class="metodo-pago col-md-6 col-lg-3 mb-3">
+                <img
+                  loading="lazy"
+                  src="imagenes/logo/metodos-de-pago-ebella.png"
+                  alt="" />
+              </div>
+
+              <div class="col-md-6 col-lg-5 mb-3">
+                <p>
+                  Copyright &copy; 2023 - All rights reserved - Lordan Clothes
+                </p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+
+    <script src="owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

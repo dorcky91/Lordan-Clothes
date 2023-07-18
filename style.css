@@ -1,0 +1,1964 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+#milogo {
+  width: 90px;
+  height: 90px;
+}
+
+#logo-footer {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 13px 30px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #3a3833;
+}
+
+hr {
+  width: 50px;
+  height: 2px;
+  background-color: coral;
+}
+
+.estrellas {
+  padding: 10px 0;
+}
+
+.estrellas i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu {
+  position: sticky;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  top: 105px;
+  z-index: 1000;
+  background-color: white;
+}
+
+.sub-menu-blog {
+  position: sticky;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  top: 80px;
+  z-index: 1000;
+  background-color: white;
+}
+
+.buscar-producto {
+  display: flex;
+  gap: 15px;
+}
+
+.buscar-producto input {
+  box-shadow: none !important;
+}
+
+.buscar-producto input:focus {
+  border: 1.5px solid #fb774b;
+}
+
+.buscar-producto button {
+  border: 1px solid #dee2e6;
+  transition: 500ms ease-in-out;
+}
+
+.buscar-producto button:hover {
+  background-color: #fb774b;
+  color: white;
+}
+
+.buscar-producto i {
+  color: #fb774b;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #fb774b;
+}
+
+.offcanvas {
+  top: 105px !important;
+  padding: 30px 20px;
+  transition: 500ms ease-in-out;
+}
+
+.filter h5 {
+  color: #fb774b;
+}
+
+.filter-by {
+  border-bottom: 1px solid #fb774b;
+}
+
+.filter-by button {
+  padding: 5px 10px;
+  color: white;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-button {
+  background: none !important;
+  box-shadow: none !important;
+  color: #fb774b;
+  font-weight: 500;
+}
+
+.offcanvas-title {
+  color: #000 !important;
+}
+
+.categoria {
+  border-bottom: 1px solid #fb774b;
+}
+
+.categoria a {
+  text-decoration: none;
+  color: gray;
+}
+
+.talla-body {
+  border-bottom: 1px solid #fb774b;
+}
+
+.talla a {
+  text-decoration: none;
+  border: 1px solid gray;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 10px 20px;
+}
+
+.color {
+  border-bottom: 1px solid #fb774b;
+}
+
+.color .red {
+  background-color: red;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .green {
+  background-color: green;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .yellow {
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .black {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .pink {
+  background-color: pink;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .chocolate {
+  background-color: chocolate;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .blue {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.color .blueviolet {
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.precio button {
+  padding: 5px 10px;
+  color: white;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.btn-accordion button {
+  padding: 15px 30px;
+}
+
+.eliminar-filtros {
+  background: none;
+  color: #000;
+  border: 1px solid #000;
+  transition: 800ms ease-in-out;
+}
+
+.eliminar-filtros:hover {
+  background-color: #fb774b;
+  color: white;
+  border-color: white;
+}
+
+.view-results {
+  background-color: #fb774b;
+  border: 1px solid #fb774b;
+  transition: 800ms ease-in-out;
+}
+
+.view-results:hover {
+  background-color: #000;
+  border-color: white;
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  padding: 0 15px;
+  color: black;
+  transition: 300ms ease;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link::before(:not(sinBarra)) {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  width: 0px;
+  background-color: black;
+  transition: 1s;
+}
+
+.navbar .navbar-nav .nav-link:hover::before {
+  width: 60%;
+}
+
+.navbar .navbar-nav .active {
+  color: coral;
+}
+
+.navbar .navbar-nav .active::before {
+  width: 30%;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: coral;
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  transition: 300ms ease;
+}
+
+.navbar .navbar-toggler {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: black;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  color: #fff;
+}
+
+.dropdown-menu {
+  padding-top: 20px 0;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  font-size: 15px;
+  transition: 300ms ease;
+}
+
+.dropdown-item:hover {
+  color: #fb774b;
+  background-color: white;
+}
+
+/* Mobile Navigación */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-collapse {
+  transition: all 1000ms ease 0s;
+}
+
+#home {
+  background-image: url("imagenes/Hero/pexels-moose-photos-1040823.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: left center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span {
+  color: coral;
+}
+
+#novedades .anuncios img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.95;
+  transition: 1s ease;
+}
+
+#clothes .saco-2 img {
+  height: 460px;
+}
+
+#clothes .saco-4 img,
+#clothes .vestido-4 img {
+  height: 385px;
+}
+
+#watches .bolso-2 img,
+#watches .reloje-3 img {
+  height: 205px;
+}
+
+#shoes .zapato img {
+  height: 250px;
+}
+
+#novedades .anuncios {
+  position: relative;
+  overflow: hidden;
+}
+
+#novedades .anuncios .detalle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#novedades .anuncios:hover .detalle {
+  cursor: pointer;
+}
+
+#novedades .anuncios:hover img {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#novedades .detalle button {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2a2a2a;
+  padding: 2px;
+  transform: translateY(20px);
+  transition: 300ms ease;
+}
+
+#novedades .anuncios .detalle button:hover {
+  color: #fb774b;
+  border-bottom: 2px solid #fb774b;
+}
+
+#novedades .anuncios:nth-child(1) .detalle {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+}
+
+#novedades .anuncios:nth-child(2) .detalle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: right; */
+}
+
+#novedades .anuncios:nth-child(3) .detalle {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Sección Productos */
+.producto {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.producto img {
+  transition: 300ms all;
+}
+
+.producto:hover img {
+  opacity: 0.7;
+}
+
+.producto .btn-comprar,
+.ajustar-altura .btn-comprar {
+  background: #fb774b;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 300ms all;
+}
+
+.producto:hover .btn-comprar,
+.ajustar-altura:hover .btn-comprar {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Sección Banner */
+#banner {
+  background-image: url("imagenes/Banner/2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#banner h1 {
+  color: #fff;
+}
+
+#banner button {
+  background-color: #fb774b;
+  background-color: black;
+}
+
+footer .copyright .metodo-pago img {
+  width: 200px;
+}
+
+footer {
+  background-color: #222;
+}
+
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li {
+  padding-bottom: 4px;
+}
+
+footer li a:hover {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+footer li a {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+footer li a:hover {
+  color: #d8d8d8;
+}
+
+footer p {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+footer .copyright a {
+  color: #000;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 300ms ease;
+  margin: 0 5px;
+}
+
+footer .copyright a:hover {
+  color: #fff;
+  background-color: #fb774b;
+}
+
+/* Sección shop.html */
+.producto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+/* SECCION CONTACTO */
+#contacto {
+  background-color: beige;
+  margin-top: -150px;
+}
+
+.datos-contacto {
+  background: linear-gradient(
+    50deg,
+    rgba(74, 69, 67, 0.5) 10%,
+    rgba(251, 119, 75, 0.5) 100%,
+    rgba(73, 66, 190, 0.5) 100%
+  );
+  border-radius: 5px;
+}
+
+.bg-danger {
+}
+
+.w-75 {
+  border: 1px solid gray;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.altura-img img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+#featured .producto img {
+  width: 100%;
+  height: 350px;
+}
+
+#featured > div:nth-child(2) > nav > ul > li.page-item.active > a {
+  background-color: black;
+}
+
+#featured > div:nth-child(2) > nav > ul > li:nth-child(n):hover > a {
+  background-color: #fb774b;
+  color: #fff;
+}
+
+.pagination a {
+  color: #000;
+}
+
+/* Sección Productos Detalles */
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  cursor: pointer;
+  flex-basis: 25%;
+  margin-right: 5px;
+}
+
+#MainImg {
+  height: 500px;
+  object-fit: cover;
+}
+
+.small-img-col img {
+  height: 100%;
+}
+
+.small-img-col:last-child {
+  margin-right: 0;
+}
+
+.producto-detalles select {
+  display: block;
+  padding: 5px 10px;
+}
+
+.producto-detalles input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.producto-detalles input:focus {
+  outline: none;
+}
+
+.agregar-carito {
+  background-color: #fb774b;
+  opacity: 1;
+  transition: 300ms all;
+}
+
+/* Seccion-blogs */
+
+#blog-container .post-img,
+#articulo-principal .post-img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#blog-container .post img,
+#articulo-principal img {
+  transition: 800ms ease;
+}
+
+#blog-container .post:hover img {
+  transform: scale(1.1) rotate(-3deg);
+  opacity: 0.8;
+}
+
+#articulo-principal .post-img:hover img {
+  transform: scale(1.1) rotate(-3deg);
+  opacity: 0.8;
+}
+
+#blog-container .post-img:hover h5 {
+  color: #fb774b;
+}
+
+#blog-container .post:hover h3 {
+  transition: 800ms ease;
+}
+
+#blog-container .post:hover h3 {
+  color: #fb774b;
+}
+
+.banner-img {
+  height: 225px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* Sección Carrito de compra */
+#cart-container {
+  overflow-x: auto;
+}
+
+#cart-container table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart-container table thead {
+  font-weight: 700;
+}
+
+#cart-container table thead td {
+  background-color: #fb774b;
+  color: #fff;
+  border: none;
+  padding: 6px 0;
+}
+
+#cart-container table td {
+  border: 1px solid #b6b3b3;
+}
+
+#cart-container table td:nth-child(1) {
+  width: 80px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+  width: 150px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+  width: 100px;
+}
+
+#cart-container table tbody img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  padding: 6px 0;
+}
+
+#cart-container table tbody i {
+  color: 8d8c89;
+}
+
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+  border: 1.5px solid #b6b3b3;
+}
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+  background-color: #fb774b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+  padding: 0 12px;
+}
+
+#cart-bottom .coupon input {
+  height: 44px;
+  margin: 0 0 20px 12px;
+}
+
+#cart-bottom .coupon button {
+  margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total > div > div {
+  padding: 0 12px;
+}
+
+#cart-bottom .total h6 {
+  color: #2a2a2a;
+}
+
+.second-hr {
+  background-color: #b8b7b3;
+  width: 100%;
+  height: 1px;
+}
+
+#cart-bottom .total div > button {
+  margin: 0 12px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#clothes .ajustar-imagen img {
+  height: 350px;
+}
+
+#clothes .ajustar-altura img {
+  height: 480px;
+}
+
+#watches .ajustar-altura img {
+  height: 250px;
+}
+
+#shoes .ajustar-imagen img {
+  height: 250px;
+}
+
+#catalogo-hombres img,
+#catalogo-hombres2 img,
+#catalogo-hombres3 img,
+#catalogo-mujeres img,
+#catalogo-mujeres2 img,
+#catalogo-mujeres3 img,
+#catalogo-mujeres4 img,
+#catalogo-kids img,
+#catalogo-kids2 img {
+  border-radius: 0;
+}
+
+.catalogo-hombre {
+  background-color: white;
+}
+
+p.small {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* h3 {
+  font-size: 30px;
+  background-color: #fb774b;
+} */
+
+.titulo {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.titulo-articulo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.subtitulo-articulo {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+#hero .card-img {
+  height: 580px;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+#hero span {
+  color: #fb774b;
+}
+
+#hero .btn {
+  background-color: #fb774b;
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+#articulo-principal video {
+  width: 100%;
+  height: 500px;
+}
+
+nav li a {
+  color: #fb774b;
+}
+
+.home-articulo img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.articulo img {
+  width: 600px;
+  height: 190px;
+  object-fit: cover;
+}
+
+#redes-sociales i {
+  background-color: #fb774b;
+  color: #fff;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+#redes-sociales .enlace {
+  background-color: #fb774b;
+  color: #fff;
+  padding: 9px 7px;
+  border-radius: 50%;
+}
+
+#christian {
+  font-size: 70px;
+}
+
+#operador {
+  font-size: 40px;
+  color: #fb774b;
+}
+
+#dior {
+  font-size: 60px;
+  color: #fb774b;
+}
+
+#articulo-Secundario form button,
+#blog-home form button,
+#articulo-principal form button {
+  background-color: #fb774b;
+  color: #fff;
+  border: none;
+}
+
+#articulo-Secundario form input,
+#blog-home form input,
+#articulo-principal form input {
+  border: 1px solid #00000080;
+}
+
+#articulo-Secundario form input:focus,
+#blog-home form input:focus,
+#articulo-principal form input:focus {
+  box-shadow: none;
+}
+
+#hero-dior img {
+  width: 100%;
+}
+
+.colaboracion-dior {
+  position: sticky;
+  top: 50px;
+  background: #fff;
+  z-index: 1;
+}
+
+.colaboracion-dior .nav-tabs {
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  scrollbar-width: none;
+}
+
+/* .marcas {
+  position: sticky;
+  top: 180px;
+} */
+
+.colaboracion-dior .nav-tabs:hover {
+  scrollbar-width: auto;
+}
+
+.colaboracion-dior .nav-tabs::-webkit-scrollbar {
+  width: 5px;
+}
+
+.colaboracion-dior .nav-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.colaboracion-dior .nav-tabs::-webkit-scrollbar,
+.colaboracion-dior .nav-tabs::-webkit-scrollbar-thumb {
+  height: 5px;
+}
+
+.colaboracion-dior .nav-tabs:hover::-webkit-scrollbar-thumb {
+  box-shadow: 3px 0 15px 0 #fb774b inset;
+}
+
+.colaboracion-dior .nav-tabs:hover::-webkit-scrollbar-track {
+  box-shadow: 3px 0 15px 0 #fb774b70 inset;
+}
+
+.nav-tabs .nav-link {
+  text-transform: inherit;
+  color: #000;
+  transition: 500ms ease;
+  display: block;
+  white-space: nowrap;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.nav-tabs .nav-link:hover {
+  background: none;
+  border: 0;
+}
+
+.nav-tabs .nav-link.active {
+  border: 0;
+  color: #fb774b !important;
+}
+
+.colaboracion-dior i {
+  color: #fb774b;
+  transition: 500ms ease;
+}
+
+.colaboracion-dior .nav-link:hover {
+  color: #fb774b;
+  font-size: 17px;
+}
+
+.colaboracion-dior .nav-link:hover i {
+  color: #000;
+  font-size: 31px;
+}
+
+#diorBirkenstock img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+#diorBirkenstock .sandalias img {
+  height: 350px;
+}
+
+#diorBirkenstock .producto-birken img {
+  transition: 300ms ease;
+}
+
+#diorBirkenstock .producto-birken {
+  transition: 300ms ease;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#diorBirkenstock .position-relative:hover .producto-birken img {
+  transform: rotate(-3deg) scale(1.15);
+}
+
+#diorTravis .producto-travis {
+  /* width: 250px; */
+  height: 400px;
+  object-fit: cover;
+}
+
+#diorTravis .producto-travis {
+  transition: 1s ease;
+}
+
+#diorTravis .producto-travis {
+  transition: 500ms ease;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#diorTravis .position-relative:hover .producto-travis {
+  transform: translateY(-10px) scale(1.05);
+}
+
+#diorTravis .position-relative:hover > p {
+  text-decoration: underline;
+  color: rgb(105, 30, 47);
+}
+
+.producto-erl img,
+.transformar-imagen img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.producto-erl .position-relative {
+  overflow: hidden;
+  transition: 800ms ease;
+}
+
+.producto-erl .position-relative > img {
+  transition: 800ms ease;
+}
+
+.producto-erl .position-relative h3 {
+  transition: 800ms ease;
+}
+
+.producto-erl .position-relative p {
+  transition: 800ms ease;
+}
+
+.producto-erl .position-relative:hover > img {
+  transform: scale(1.18);
+}
+
+.producto-erl .position-relative:hover h3 {
+  margin-top: 25px;
+  color: #fb774b;
+}
+
+.producto-erl .position-relative:hover p {
+  text-decoration: underline;
+}
+
+.transformar-imagen > img {
+  transform: translateY(20px);
+  overflow: hidden;
+}
+
+.transformar-imagen,
+.transformar-imagen h3,
+.transformar-imagen h5 {
+  transition: 800ms ease;
+}
+
+.position-relative:hover .transformar-imagen {
+  transform: translateY(-40px);
+}
+
+.position-relative:hover .transformar-imagen h3 {
+  color: #fb774b;
+}
+
+.position-relative:hover .transformar-imagen h5 {
+  color: #fb774b;
+}
+
+.position-relative:hover .transformar-imagen p {
+  text-decoration: underline;
+}
+
+.colaboracion-diorErl .position-relative > img {
+  width: 100%;
+  height: 170px;
+}
+
+.diorErl-articulo .position-relative > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.diorErl-articulo .position-relative {
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.diorErl-articulo .position-relative h3 {
+  transition: 1s ease;
+}
+
+.diorErl-articulo .position-relative p {
+  transition: 1s ease;
+}
+
+.diorErl-articulo .position-relative > img {
+  transition: 1s ease;
+}
+
+.diorErl-articulo:hover .position-relative {
+  transform: scale(0.85);
+}
+
+.diorErl-articulo:hover .position-relative h3 {
+  color: #fb774b;
+}
+
+.diorErl-articulo:hover .position-relative h3 {
+  color: #fb774b;
+}
+
+.diorErl-articulo:hover .position-relative p {
+  text-decoration: underline;
+}
+
+.diorErl-articulo:hover .position-relative > img {
+  border-radius: 10px;
+}
+
+.producto-nike > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.producto-nike-articulo {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.producto-nike-articulo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 900ms;
+}
+
+.producto-nike-articulo:hover img {
+  transform: scale(1.3);
+}
+
+.transformación {
+  background-color: white;
+  transform: translateY(-40px);
+  padding: 0 15px;
+  transition: 800ms ease;
+}
+
+.producto-harrods-articulo > img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.producto-harrods {
+  overflow: hidden;
+}
+
+.producto-harrods-articulo img,
+.producto-harrods h3 {
+  transition: 1s ease;
+}
+
+.producto-harrods:hover .producto-harrods-articulo img {
+  transform: scale(1.2);
+}
+
+.producto-harrods:hover h3 {
+  color: #fb774b;
+}
+
+.pie-articulo img,
+#diorBirkenstock .pie-articulo img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.pie-articulo i {
+  font-size: 7px;
+}
+
+.pie-articulo span {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* **********SECCION ABOUT********************** */
+#encabezado-about {
+  border-left: 5px solid #fb774b;
+}
+
+#objetivo {
+  border-bottom: 2px solid #000;
+}
+
+#objetivo .nav {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#objetivo .nav-link {
+  color: #fb774b;
+}
+
+#objetivo .nav-link.active {
+  text-align: center;
+  color: white !important;
+  padding: 10px 15px !important;
+  background-color: #fb774b;
+  border-radius: 5px;
+}
+
+#hero-about {
+  background-image: url("imagenes/about/hero-about.jpg");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#hero-about span {
+  color: coral;
+}
+
+#hero-about .leer-mas {
+  background: none;
+  border: 1px solid #000;
+  color: #000;
+}
+
+#hero-about .first-order {
+  border-left: 5px solid #fb774b;
+}
+
+#hero-about p {
+  font-weight: bold;
+}
+
+.team-members {
+  border-left: 5px solid #fb774b;
+}
+
+.item {
+  background-color: rgba(119, 136, 153, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: 1s ease-in-out;
+}
+
+.orlando {
+  object-position: top;
+}
+
+.item:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.35);
+}
+
+.redes-sociale {
+  bottom: 50%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.item:hover .redes-sociale {
+  opacity: 1;
+}
+
+.redes-sociale a {
+  text-decoration: none;
+  color: #000;
+}
+
+.redes-sociale i {
+  background-color: white;
+  padding: 8px 10px;
+}
+
+@media only screen and (max-width: 991.98px) {
+  body > nav > div > button:hover,
+  body > nav > div > button:focus {
+    background-color: #fb774b;
+    outline: none;
+  }
+  /* 
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar {
+    color: white;
+  } */
+
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+
+@media (min-height: 576px) and (max-width: 767.98px) {
+  .buscar-producto input {
+    font-size: 10px;
+  }
+
+  .buscar-producto button {
+    font-size: 9px;
+  }
+
+  .filter h5,
+  .filter,
+  .sinBarra i {
+    font-size: 14px !important;
+  }
+
+  .producto .btn-comprar,
+  .ajustar-altura .btn-comprar {
+    background: #fb774b;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 300ms all;
+  }
+
+  #featured .ajustar-altura img {
+    height: 200px;
+  }
+
+  #clothes .ajustar-altura img {
+    height: 400px;
+  }
+
+  #clothes .sm-altura img {
+    height: 300px;
+  }
+
+  #clothes .xs-altura img {
+    height: 200px;
+  }
+
+  #watches .ajustar-altura img {
+    height: 160px;
+  }
+
+  #shoes .ajustar-altura img {
+    height: 200px;
+  }
+
+  #shoes .sm-altura img {
+    height: 160px;
+  }
+
+  #catalogo-hombres .producto img {
+    height: 270px;
+  }
+  #catalogo-hombres .ajustar-altura img {
+    height: 320px;
+  }
+
+  #catalogo-hombres .traje img {
+    height: 500px;
+  }
+
+  #catalogo-hombres .first-imagen img {
+    height: 300px;
+  }
+
+  #catalogo-hombres .sm-altura img {
+    height: 180px;
+  }
+
+  #catalogo-hombres2 .ajustar-altura img {
+    height: 400px;
+  }
+
+  #catalogo-hombres2 .jeans img {
+    width: 60%;
+  }
+
+  #catalogo-hombres2 .sm-altura img {
+    height: 230px;
+  }
+
+  #catalogo-hombres2 .pantalon-vestir img {
+    width: 70%;
+  }
+
+  #catalogo-hombres2 .Zapato-vestir img {
+    height: auto;
+  }
+
+  #catalogo-hombres3 .deporte img {
+    width: 80%;
+    object-position: right;
+  }
+
+  #catalogo-hombres3 .bolso img {
+    width: 80%;
+  }
+
+  #catalogo-hombres3 .perfume img {
+    width: 80%;
+  }
+
+  #catalogo-hombres3 .sm-altura img {
+    height: 230px;
+  }
+
+  #catalogo-hombres3 .sm-altura-relojes img {
+    height: 200px;
+  }
+
+  #catalogo-hombres3 .reloj-cable img {
+    height: 300px;
+  }
+
+  #catalogo-hombres3 .ajustar-altura img {
+    height: 200px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-col-12 img {
+    height: 450px;
+  }
+
+  #catalogo-mujeres .ajustar-imagen-col-12 img {
+    width: 100%;
+    height: 300px;
+  }
+
+  #blog-container .ajustar-altura img {
+    height: auto;
+  }
+
+  #catalogo-mujeres2 .ajusta-altura-shorts img {
+    object-position: bottom;
+  }
+
+  #catalogo-mujeres2 .ajustar-altura-zapato img {
+    height: 240px;
+  }
+
+  #catalogo-mujeres3 .ajusta-altura-accesorios img {
+    height: 230px;
+  }
+
+  #catalogo-mujeres4 .ajustar-altura-deporte img {
+    height: 400px;
+  }
+
+  #catalogo-kids .ajustar-altura-sm img {
+    height: 500px;
+  }
+
+  #catalogo-kids2 .ajustar-altura-bermuda img {
+    height: 400px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .producto-nike > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #hero-dior img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .buscar-producto input {
+    font-size: 10px;
+  }
+
+  .buscar-producto button {
+    font-size: 9px;
+  }
+
+  .producto .btn-comprar,
+  .ajustar-altura .btn-comprar {
+    background: #fb774b;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 300ms all;
+  }
+
+  #clothes .ajustar-altura img {
+    height: 400px;
+  }
+
+  #clothes .ajustar-imagen img {
+    height: 400px;
+  }
+
+  #shoes .ajustar-altura img {
+    height: 520px;
+  }
+
+  #shoes .ajustar-imagen img {
+    height: 500px;
+  }
+
+  #shoes .ajustar-zapatos-md img {
+    height: 280px;
+  }
+
+  #catalogo-hombres .ajustar-altura img {
+    height: 650px;
+  }
+
+  #catalogo-hombres .traje img {
+    height: auto;
+  }
+
+  #catalogo-hombres .md-altura img {
+    height: 400px;
+  }
+
+  #catalogo-hombres .ajustar-imagen img {
+    height: auto;
+  }
+
+  #catalogo-hombres2 .md-jeans img {
+    height: 400px;
+  }
+
+  #catalogo-hombres2 .altura-md-bermudas img {
+    height: 450px;
+  }
+
+  #catalogo-hombres2 .md-bermudas img {
+    height: 300px;
+    object-position: bottom;
+  }
+
+  #catalogo-hombres2 .altura-md-zapatos img {
+    height: 400px;
+  }
+
+  #catalogo-hombres2 .altura-md-tenis img {
+    height: 500px;
+  }
+
+  #catalogo-hombres2 .altura-md-sandalias img {
+    height: 550px;
+  }
+
+  #catalogo-hombres3 .md-altura img {
+    height: 500px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-col-12 img {
+    height: 750px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-vestido-casual img {
+    height: 500px;
+  }
+
+  #catalogo-mujeres .ajustar-imagen-col-12 img {
+    width: 100%;
+    height: 500px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-blusas img {
+    height: 400px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-sueteres img {
+    height: 400px;
+  }
+
+  #catalogo-mujeres2 .ajusta-posicion-shorts img {
+    height: 400px;
+    object-position: bottom;
+  }
+
+  #catalogo-mujeres2 .altura-shorts img {
+    height: 400px;
+  }
+
+  #catalogo-mujeres2 .ajusta-altura-shorts img {
+    height: 650px;
+    width: 80%;
+    object-position: bottom;
+  }
+
+  #catalogo-mujeres2 .ajustar-altura-pantalones img {
+    height: 500px;
+  }
+
+  #catalogo-mujeres2 .ajustar-altura-zapatos img {
+    height: 450px;
+  }
+
+  #catalogo-mujeres3 .ajusta-altura-maquillajes img {
+    height: 500px;
+  }
+
+  #catalogo-mujeres3 .altura-conjuntos-accesorios img {
+    height: 500px;
+  }
+
+  #catalogo-mujeres4 .ajustar-altura-deporte-playa img {
+    height: 400px;
+  }
+
+  #catalogo-mujeres4 .ajustar-altura-deporte img {
+    height: 680px;
+  }
+
+  #catalogo-kids .ajustar-altura img {
+    height: 600px;
+  }
+
+  #catalogo-kids .ajustar-altura-md img {
+    height: 400px;
+  }
+
+  #catalogo-kids2 .ajustar-altura img {
+    height: 450px;
+  }
+
+  .collection-hombres img {
+    height: 400px;
+  }
+
+  .collection-mujeres img {
+    height: 350px;
+  }
+
+  .blog-moda img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .colaboracion-dior .nav-tabs::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .colaboracion-dior .nav-tabs::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .colaboracion-dior .nav-tabs::-webkit-scrollbar,
+  .colaboracion-dior .nav-tabs::-webkit-scrollbar-thumb {
+    height: 5px;
+  }
+
+  .colaboracion-dior .nav-tabs:hover::-webkit-scrollbar-thumb {
+    box-shadow: 3px 0 15px 0 #fb774b inset;
+  }
+
+  .colaboracion-dior .nav-tabs:hover::-webkit-scrollbar-track {
+    box-shadow: 3px 0 15px 0 #fb774b70 inset;
+  }
+}
+
+@media (min-width: 992px) {
+  #catalogo-hombres .lg-altura img {
+    height: 400px;
+  }
+
+  #catalogo-hombres .lg-4-altura img {
+    height: 450px;
+  }
+
+  #catalogo-hombres .altura-chamarra-sueter img {
+    height: 500px;
+  }
+
+  #catalogo-hombres .altura-chamarra img {
+    height: 350px;
+  }
+
+  #catalogo-hombres .traje img {
+    width: 35%;
+    height: auto;
+  }
+
+  #catalogo-hombres .altura-traje img {
+    height: 400px;
+  }
+
+  #catalogo-hombres .ajustar-altura-traje img {
+    height: 500px;
+  }
+
+  #catalogo-hombres2 .ajustar-altura-jeans img {
+    height: 600px;
+  }
+
+  #catalogo-hombres2 .posición-bermudas img {
+    object-position: bottom;
+  }
+
+  #catalogo-hombres3 .ajustar-altura-deporte img {
+    height: 400px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-vestido img {
+    height: 450px;
+    width: 85%;
+  }
+
+  #catalogo-mujeres .ajustar-imagen-col-12 img {
+    width: 80%;
+    height: 500px;
+    padding: 0;
+  }
+
+  #catalogo-mujeres .ajustar-altura-blusas-lg-6 img {
+    width: 90%;
+    height: 400px;
+  }
+
+  #catalogo-mujeres .ajustar-altura-faldas img {
+    height: 450px;
+    width: 70%;
+  }
+
+  .ajustar-altura-sueteres-lg img {
+    width: 80%;
+  }
+
+  .ajustar-altura-chamarra-lg img {
+    width: 90%;
+    height: 400px;
+  }
+
+  #catalogo-mujeres2 .altura-shorts-lg img {
+    width: 90%;
+    height: 350px;
+  }
+
+  .justa-posicion-shorts-lg img {
+    object-position: bottom;
+  }
+
+  .ajustar-altura-pantalones img {
+    width: 80%;
+    height: 400px;
+  }
+
+  .ajusta-altura-maquillajes-lg img {
+    width: 95%;
+    height: 300px;
+  }
+
+  .ajusta-altura-maquillajes-lg:nth-child(4) img {
+    width: 85%;
+    height: 350px;
+  }
+
+  .ajusta-altura-maquillajes-lg:nth-child(5) img {
+    width: 85%;
+    height: 350px;
+  }
+
+  .ajustar-altura-relojes img {
+    height: 250px;
+  }
+
+  .ajusta-altura-bolsos img {
+    height: 380px;
+  }
+
+  .ajustar-altura-deporte-lg img {
+    width: 75%;
+    height: 380px;
+  }
+
+  .ajustar-altura-playa img {
+    height: 250px;
+  }
+
+  .altura-vestido-lg img {
+    width: 90%;
+    height: 450px;
+  }
+
+  .altura-camisa-lg img {
+    width: 95%;
+    height: 400px;
+  }
+
+  .altura-chamarra-lg img {
+    width: 98%;
+    height: 350px;
+  }
+
+  .altura-sueteres-lg img {
+    width: 90%;
+    height: 400px;
+  }
+
+  .ajustar-altura-bermuda img {
+    width: 90%;
+    height: 400px;
+  }
+
+  .ajustar-altura-pantalones img {
+    width: 85%;
+    height: 400px;
+  }
+
+  .traje-bano img {
+    width: 80%;
+    height: 400px;
+  }
+
+  .collection-hombres img {
+    width: 90%;
+    height: 500px;
+  }
+
+  .collection-mujeres img {
+    width: 95%;
+    height: 400px;
+  }
+
+  .collection-kids img {
+    width: 98%;
+    height: 350px;
+  }
+
+  .colaboracion-marcas {
+    padding-top: 75px !important;
+    padding-bottom: 70px !important;
+  }
+}
