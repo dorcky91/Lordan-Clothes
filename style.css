@@ -375,6 +375,7 @@ hr {
   background-image: url("imagenes/Hero/pexels-moose-photos-1040823.jpg");
   width: 100%;
   height: 100vh;
+  position: fixed;
   background-size: cover;
   background-position: left center;
   display: flex;
