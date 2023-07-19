@@ -371,6 +371,11 @@ hr {
   transition: all 1000ms ease 0s;
 }
 
+.nav-link:focus-visible {
+  outline: 0;
+  box-shadow: none !important;
+}
+
 #home {
   background-image: url("imagenes/Hero/pexels-moose-photos-1040823.jpg");
   width: 100%;
@@ -527,6 +532,11 @@ hr {
 #banner button {
   background-color: #fb774b;
   background-color: black;
+}
+
+.buscar-producto form button {
+  background-color: #000;
+  color: white;
 }
 
 footer .copyright .metodo-pago img {
@@ -1598,6 +1608,19 @@ nav li a {
     height: 500px;
     object-fit: cover;
   }
+
+  #banner {
+    background-image: url("imagenes/Banner/2.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1786,6 +1809,19 @@ nav li a {
 
   .colaboracion-dior .nav-tabs:hover::-webkit-scrollbar-track {
     box-shadow: 3px 0 15px 0 #fb774b70 inset;
+  }
+
+  #banner {
+    background-image: url("imagenes/Banner/2.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
